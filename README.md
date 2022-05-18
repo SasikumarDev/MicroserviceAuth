@@ -1,2 +1,2 @@
 # MicroserviceAuth
-Asp.net Microservice Authentication and Autherization
+Asp.net Microservice Authentication and Authorization
