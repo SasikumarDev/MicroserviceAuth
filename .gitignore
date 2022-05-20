@@ -5,3 +5,6 @@
 /Identity.API/obj/*
 /Identity.API/Properties/*
 /Product.API/wwwroot/PartImages/
+/Identity.API/Migrations/*
+/Gateway/OcelotApiGw/bin/*
+/Gateway/OcelotApiGw/obj/*

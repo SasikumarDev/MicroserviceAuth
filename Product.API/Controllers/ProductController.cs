@@ -32,6 +32,7 @@ public class ProductController : ControllerBase
 
     [Authorize(Policy = "Admin")]
     [HttpGet]
+    [Route("[action]")]
     public async Task<IActionResult> GetUserDetails()
     {
         string token = Request.Headers[HeaderNames.Authorization].ToString();
