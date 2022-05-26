@@ -28,7 +28,8 @@
             ],
             "UpstreamPathTemplate": "/User/{everything}",
             "UpstreamHttpMethod": [
-                "Post"
+                "Post",
+                "Get"
             ]
         }
     ]

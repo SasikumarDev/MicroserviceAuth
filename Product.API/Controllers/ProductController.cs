@@ -49,7 +49,17 @@ public class ProductController : ControllerBase
     [Route("[action]")]
     public async Task<IActionResult> GetProducts()
     {
+        string urlpath = Request.Scheme + "://" + Request.Host.Value + Url.Content("/PartImages");
         var data = await _unitofWork.productRepository.GetAll();
+        return Ok(data);
+    }
+
+    [HttpGet, AllowAnonymous]
+    [Route("[action]")]
+    public async Task<IActionResult> getProductsDisplay()
+    {
+        string urlpath = Request.Scheme + "://" + Request.Host.Value + Url.Content("/PartImages/");
+        var data = await _unitofWork.productRepository.getProductsDisplay(urlpath);
         return Ok(data);
     }
 

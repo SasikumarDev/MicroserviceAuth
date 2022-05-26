@@ -5,4 +5,5 @@ public interface IProductRepository
     Task CreateProduct(Models.Product product);
     Task<IEnumerable<Models.Product>> GetAll();
     Task<bool> DeleteProduct(string id);
+    Task<object> getProductsDisplay(string Urlcontent);
 }

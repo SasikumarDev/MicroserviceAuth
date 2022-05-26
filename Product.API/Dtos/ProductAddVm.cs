@@ -15,6 +15,10 @@ public class ProductAddVm
     [FileValidation(new string[] { ".jpg", ".jpeg", ".png", ".glb" }, true, null, true)]
     public List<IFormFile> Images { get; set; }
 
+    [Required(ErrorMessage ="Category is Required")]
+    [Display(Name ="Category")]
+    public string Category { get; set; }
+
     [Required(ErrorMessage = "Product Price is Required")]
     public decimal Price { get; set; }
 }
