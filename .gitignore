@@ -8,3 +8,4 @@
 /Identity.API/Migrations/*
 /Gateway/OcelotApiGw/bin/*
 /Gateway/OcelotApiGw/obj/*
+.vscode/*
